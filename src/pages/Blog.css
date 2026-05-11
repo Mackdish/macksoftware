@@ -1,0 +1,27 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33% - 20px);
+}
+
+.sidebar {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(100% - 20px);
+    }
+}
